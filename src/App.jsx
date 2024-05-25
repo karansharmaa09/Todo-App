@@ -1,32 +1,11 @@
-
-import React from "react";
-import { useState } from "react";
-
-const App = () => {
-  let [count, setCount] = useState(0);
-
-  const AddNum = () => {
-    if (count === 20) {
-      return 20;
-    }
-    setCount(count + 1);
-  };
-  const RemoveNum = () => {
-    if (count === 0) {
-      return 0;
-    }
-    setCount(count - 1);
-  };
-  return (
-    <>
-      <h1>Counter : {count}</h1>
-      <br />
-      <button onClick={AddNum}>Add</button>
-      <br />
-      <br />
-      <button onClick={RemoveNum}>Remove</button>
-    </>
-  );
-};
-
-export default App;
+<div className="bg-[#172842] min-h-screen py-8">
+                <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
+                    <h1 className="text-2xl font-bold text-center mb-8 mt-2">Manage Your Todos</h1>
+                    <div className="mb-4">
+                        {/* Todo form goes here */} 
+                    </div>
+                    <div className="flex flex-wrap gap-y-3">
+                        {/*Loop and Add TodoItem here */}
+                    </div>
+                </div>
+            </div>
